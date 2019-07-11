@@ -7,6 +7,6 @@ def build() {
     println "Preparing docker image..."
 
     def tag = 'node-web-app'
-    def appName = config.docker.appname
+    
     sh "docker build --no-cache -f ${dockerfilePATH} -t ${REGISTRY_NAME}/${IMAGENAME} ."
 }
